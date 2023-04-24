@@ -1,14 +1,14 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main_div{
+.main_div {
   width: 100%;
   height: 100vh;
-  background-color: #6989aa;
+  background-color: #badc58;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,17 +18,21 @@
 
 .center_div {
   width: 25%;
-  height: 80vh;
+  height: 60vh;
   background-color: #f4f4f4;
   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   color: white;
   background: transparent;
-  background-color: #8566aa;
-  padding: 6px 0 2px;
+  background-color: #30336b;
+  padding: 10px 20px;
   margin-bottom: 10px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
@@ -46,22 +50,45 @@ input {
   outline: none;
 }
 
-button {
+button
+{
   min-height: 40px;
-  width: 45px;
-  border-radius: 50%;
+  /* width: 45px; */
+  border-radius: 5%;
   border-color: transparent;
-  background-color: #8566aa;
+  background-color: #30336b;
   color: #fff;
-  font-size: 40px;
+  font-size: 20px;
   border: none;
   outline: none;
-  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px 10px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-  background-color: #20bf6b;
+  background-color: #22a6b3;
+  cursor: pointer;
+}
+
+.new_btn{
+  width: 50px;
+  height: 55px;
+  background-color: #16a085 !important;
+  color: white !important;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  border-radius: 50% !important;
+}
+.new_btn:hover{
+  background-color: green !important;
+  cursor: pointer;
+}
+
+.btn_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 ol {
@@ -109,21 +136,24 @@ ol li {
   color: crimson;
 }
 
-@media(max-width: 768px){
-  .center_div{
-    width : 55%;
+@media(max-width: 768px) {
+  .center_div {
+    width: 55%;
   }
-  .todo_style .fa_times{
-    margin : 0 15px 0 15px;
+
+  .todo_style .fa_times {
+    margin: 0 15px 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  button{
+
+  button,
+  .newBtn {
     margin-left: 5px;
     min-height: 40px;
-    width : 40px;
-    color : #fff;
-    font-size : 30px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
   }
 }
